@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fbff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0a2ff1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0a2ff1;
+}
+
+.btn {
+  background: #0a2ff1;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0040ff;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 80px;
+}
+
+.hero-text h1 {
+  color: #0a2ff1;
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  color: #555;
+  max-width: 450px;
+}
+
+.hero-img img {
+  width: 450px;
+}
+.team {
+  text-align: center;
+  padding: 80px 60px;
+}
+.team h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+.team img {
+  width: 600px;
+}
+.services {
+  text-align: center;
+  padding: 80px 60px;
+  background: #fff;
+}
+.service-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.service-boxes .box {
+  background: #f5f7ff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.pricing {
+  text-align: center;
+  padding: 80px 60px;
+  background: linear-gradient(to bottom, #f9fbff, #e6f0ff);
+}
+.price-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.price-cards .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card.active {
+  border: 2px solid #0a2ff1;
+}
+/* ===== Testimonials ===== */
+.testimonials {
+  background: linear-gradient(to right, #0a2ff1, #0a7ff1);
+  color: #fff;
+  text-align: center;
+  padding: 90px 60px;
+}
+
+.testimonials h2 {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.t-card {
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  padding: 40px;
+  width: 300px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.t-card p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.client h4 {
+  font-size: 1rem;
+  color: #0a2ff1;
+}
+
+/* ===== Portfolio ===== */
+.portfolio {
+  text-align: center;
+  padding: 100px 60px;
+  background: #f9fbff;
+}
+
+.portfolio h2 {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.portfolio-grid .item {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  width: 230px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.portfolio-grid p {
+  font-size: 0.8rem;
+  color: #0a2ff1;
+  margin: 10px 15px 0;
+}
+
+.portfolio-grid h4 {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 15px 15px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #0a2ff1;
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  width: 220px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer .btn {
+  background: #fff;
+  color: #0a2ff1;
+}
+
+.footer .btn:hover {
+  background: #e6e6e6;
+}
+
+.footer p {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+  .testimonial-cards, .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input {
+    width: 80%;
+  }
+}
