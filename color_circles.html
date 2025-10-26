@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Circles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      gap: 60px; 
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transition: background-color 0.5s; 
+    }
+
+    
+    .green {
+      background-color: green;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .rose {
+      background-color: #ff007f; 
+    }
+
+  
+    .green:hover {
+      background-color: blue;
+    }
+
+    .yellow:hover {
+      background-color: green;
+    }
+
+    .rose:hover {
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  <h2>This is colorful circles</h2>
+
+  <div class="circle-container">
+    <div class="circle green"></div>
+    <div class="circle yellow"></div>
+    <div class="circle rose"></div>
+  </div>
+</body>
+</html>

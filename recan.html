@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Rectangle</title>
+
+  <style>
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9fafb;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    
+    h2 {
+      color: #333;
+      margin-bottom: 40px;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    
+    .outer-box {
+      width: 320px;
+      height: 220px;
+      background-color: violet;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: outerColorAnim 3s infinite alternate ease-in-out;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    
+    .inner-box {
+      width: 160px;
+      height: 110px;
+      background-color: navy;
+      border-radius: 30px;
+      animation: innerColorAnim 3s infinite alternate ease-in-out;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    
+    @keyframes outerColorAnim {
+      0% { background-color: purple; }
+      100% { background-color: red; }
+    }
+
+    
+    @keyframes innerColorAnim {
+      0% { background-color: navy; }
+      100% { background-color: yellow; }
+    }
+
+    
+    @media (max-width: 500px) {
+      .outer-box {
+        width: 260px;
+        height: 180px;
+      }
+      .inner-box {
+        width: 130px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h4>This is the animation task which should be completed by the student</h4>
+  <div class="outer-box">
+    <div class="inner-box"></div>
+  </div>
+</body>
+</html>

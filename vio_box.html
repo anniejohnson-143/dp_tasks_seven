@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z Layout with Flexbox</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: violet;
+      transition: all 2s linear;
+    }
+
+    /* Arrange in Z shape using flex + alignment */
+    .top {
+      align-self: flex-start;
+      margin-left: 50px;
+    }
+
+    .middle {
+      align-self: center;
+    }
+
+    .bottom {
+      align-self: flex-end;
+      margin-right: 50px;
+    }
+
+    
+    .box:hover {
+      transform: scale(1.2) rotate(15deg);
+      background-color: plum;
+    }
+  </style>
+</head>
+<body>
+  <div class="box top"></div>
+  <div class="box middle"></div>
+  <div class="box bottom"></div>
+</body>
+</html>
